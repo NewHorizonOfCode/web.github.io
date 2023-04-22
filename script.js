@@ -54,7 +54,7 @@ function next() {
 }
 
 function setImg() {
-  return slide_img.setAttribute('src', 'images/' + images[i]);
+  return slide_img.setAttribute('src', '../images/' + images[i]);
 }
 
 //slide the hotel  images by clicking on arrows. Hotel 2 on hotels page
@@ -75,7 +75,7 @@ function next2() {
 }
 
 function setImg2() {
-  return slide_img2.setAttribute('src', 'images/' + images2[x]);
+  return slide_img2.setAttribute('src', '../images/' + images2[x]);
 }
 
 
@@ -97,7 +97,7 @@ function next3() {
 }
 
 function setImg3() {
-  return slide_img3.setAttribute('src', 'images/' + images3[y]);
+  return slide_img3.setAttribute('src', '../images/' + images3[y]);
 }
 
 //toggle between hiding and showing more restaurant categories on restaurant page
@@ -128,7 +128,7 @@ function next4() {
 }
 
 function setImg4() {
-  return rest_img.setAttribute('src', 'images/' + images4[z]);
+  return rest_img.setAttribute('src', '../images/' + images4[z]);
 }
 
 //slide the restaurant images by clicking on arrows. 2nd Restaurant on hotels page
@@ -149,7 +149,7 @@ function next5() {
 }
 
 function setImg5() {
-  return rest_img2.setAttribute('src', 'images/' + images5[a]);
+  return rest_img2.setAttribute('src', '../images/' + images5[a]);
 }
 
 //slide the restaurant images by clicking on arrows. 3rd Restaurant on hotels page
@@ -170,7 +170,7 @@ function next6() {
 }
 
 function setImg6() {
-  return rest_img3.setAttribute('src', 'images/' + images6[b]);
+  return rest_img3.setAttribute('src', '../images/' + images6[b]);
 }
 
 /*------------------------------------Script for Flights page-----------------------------------------*/

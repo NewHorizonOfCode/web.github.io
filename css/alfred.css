@@ -419,7 +419,7 @@ input[type=number] {
 .flightcontent{
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url("./images/plane.jpg");
+  background-image: url("../images/plane.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -469,7 +469,7 @@ main {
 /*-------------------------------CSS for Index by Liu--------------------------------*/
 
 .header-home{
-	background-image: url("./images/1005-1600x600.jpg");
+	background-image: url("../images/1005-1600x600.jpg");
 	background-size: cover;
 	height: 450px;
 	display: flex;

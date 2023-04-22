@@ -140,7 +140,7 @@ h2{
 	padding:20px;
 	box-sizing: border-box;
 	height:612px;
-	  background-image: url("images/background.jpg");
+	  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

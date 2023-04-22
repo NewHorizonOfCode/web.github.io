@@ -5,8 +5,8 @@
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Nook - Attractions</title>
-    <link rel="stylesheet" href="styles.css">
-	<link rel="shortcut icon" href="./images/icon.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+	<link rel="shortcut icon" href="../images/icon.png" type="image/png">
     <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
@@ -14,6 +14,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../script.js"></script>
 
 	<!-- Style to make a website responsive-->
 <style> 
@@ -67,32 +68,32 @@
 <body>
 	<!-- Top navigation bar-->
 	<nav class="header">
-		<img src="images/logo.png" alt="logo" id="logo">
-        <a href="index.html" class="headlink">Home</a>
-		<a href="flights.html" class="headlink">Flights</a>
-		<a href="hotels.html" class="headlink">Hotels</a>
-		<a href="carrental.html" class="headlink">Car Rentals</a>
-		<a href="restaurants.html" class="headlink">Restaurants</a>
-		<a href="offer.html" class="headlink">Offers</a>
-		<a href="attractions.html" class="headlink" id="attractions">Attractions</a>
-		<a href="contact.html" class="headlink">Contact us</a>
+		<img src="../images/logo.png" alt="logo" id="logo">
+        <a href="../index.html" class="headlink">Home</a>
+		<a href="./flights.html" class="headlink">Flights</a>
+		<a href="./hotels.html" class="headlink">Hotels</a>
+		<a href="./carrental.html" class="headlink">Car Rentals</a>
+		<a href="./restaurants.html" class="headlink">Restaurants</a>
+		<a href="./offer.html" class="headlink">Offers</a>
+		<a href="" class="headlink" id="attractions">Attractions</a>
+		<a href="./contact.html" class="headlink">Contact us</a>
 	</nav>
 	<h2 class="attractionheader"> Experience great time at attractions around the world </h2>
 	<!-- Display the list of Attractions-->
 	<div class="container">
 	<!--Cliffs of Moher Attraction-->
 		<div class="item">
-			<img id="image" class="item-img-attr" src="images/cliffs1.jpg" alt="Image">
+			<img id="image" class="item-img-attr" src="../images/cliffs1.jpg" alt="Image">
 			<div class="btn-container">
-				<button onclick="changeImage('images/cliffs1.jpg')" class="attractionbutton">Image 1</button>
-				<button onclick="changeImage('images/cliffs2.jpg')" class="attractionbutton">Image 2</button>
-				<button onclick="changeImage('images/cliffs3.jpg')" class="attractionbutton">Image 3</button>
+				<button onclick="changeImage('../images/cliffs1.jpg')" class="attractionbutton">Image 1</button>
+				<button onclick="changeImage('../images/cliffs2.jpg')" class="attractionbutton">Image 2</button>
+				<button onclick="changeImage('../images/cliffs3.jpg')" class="attractionbutton">Image 3</button>
 			</div>
 			
 			<div class="attractiondescription">
 				<p class="attractiondescription">The Cliffs of Moher</p>
 				<p class="attractiondescription3">Co. Clare, Ireland</p>
-				<img class="img-icon-attr" src="images/irl.jpg" alt="ireland" class="flagimg">			
+				<img class="img-icon-attr" src="../images/irl.jpg" alt="ireland" class="flagimg">			
 			</div>
 			<div class ="tourdescription">
 				<div class ="tourdescription-sub">
@@ -111,16 +112,16 @@
 		</div>
 	<!--Louvre Attraction-->
 		<div class="item">
-			<img id="image1" class="item-img-attr" src="images/louvre1.jpg" alt="Image 1">
+			<img id="image1" class="item-img-attr" src="../images/louvre1.jpg" alt="Image 1">
 			<div class="btn-container">
-				<button onclick="changeImage1('images/louvre1.jpg')" class="attractionbutton">Image 1</button>
-				<button onclick="changeImage1('images/louvre2.jpg')" class="attractionbutton">Image 2</button>
-				<button onclick="changeImage1('images/louvre3.jpg')" class="attractionbutton">Image 3</button>
+				<button onclick="changeImage1('../images/louvre1.jpg')" class="attractionbutton">Image 1</button>
+				<button onclick="changeImage1('../images/louvre2.jpg')" class="attractionbutton">Image 2</button>
+				<button onclick="changeImage1('../images/louvre3.jpg')" class="attractionbutton">Image 3</button>
 			</div>
 			<div class="attractiondescription">
 				<p class="attractiondescription">Louvre Museum</p>
 				<p class="attractiondescription3">Paris, France</p>
-				<img class="img-icon-attr" src="images/frn.jpg" alt="Louvre" class="flagimg">		
+				<img class="img-icon-attr" src="../images/frn.jpg" alt="Louvre" class="flagimg">		
 			</div>
 			<div class ="tourdescription">
 				<div class ="tourdescription-sub">
@@ -139,16 +140,16 @@
 		</div>
 	<!--Park Guell -->
 		<div class="item">
-			<img id="image2" class="item-img-attr" src="images/guel1.jpg" alt="Image 2">
+			<img id="image2" class="item-img-attr" src="../images/guel1.jpg" alt="Image 2">
 			<div class="btn-container">
-				<button onclick="changeImage2('images/guel1.jpg')" class="attractionbutton">Image 1</button>
-				<button onclick="changeImage2('images/guel2.jpg')" class="attractionbutton">Image 2</button>
-				<button onclick="changeImage2('images/guel3.jpg')" class="attractionbutton">Image 3</button>
+				<button onclick="changeImage2('../images/guel1.jpg')" class="attractionbutton">Image 1</button>
+				<button onclick="changeImage2('../images/guel2.jpg')" class="attractionbutton">Image 2</button>
+				<button onclick="changeImage2('../images/guel3.jpg')" class="attractionbutton">Image 3</button>
 			</div>
 			<div class="attractiondescription">
 				<p class="attractiondescription">Park Guell</p>
 				<p class="attractiondescription3">Barcelona, Spain</p>
-				<img class="img-icon-attr" src="images/spn.jpg" alt="Park Guell" class="flagimg">			
+				<img class="img-icon-attr" src="../images/spn.jpg" alt="Park Guell" class="flagimg">			
 			</div>
 			<div class ="tourdescription">
 				<div class ="tourdescription-sub">
@@ -166,16 +167,16 @@
 		</div>
 		<!--the Statue of Liberty -->
 		<div class="item">
-			<img id="image3" class="item-img-attr" src="images/liberty1.jpg" alt="Image 3">
+			<img id="image3" class="item-img-attr" src="../images/liberty1.jpg" alt="Image 3">
 			<div class="btn-container">
-				<button onclick="changeImage3('images/liberty1.jpg')" class="attractionbutton">Image 1</button>
-				<button onclick="changeImage3('images/liberty2.jpg')" class="attractionbutton">Image 2</button>
-				<button onclick="changeImage3('images/liberty3.jpg')" class="attractionbutton">Image 3</button>
+				<button onclick="changeImage3('../images/liberty1.jpg')" class="attractionbutton">Image 1</button>
+				<button onclick="changeImage3('../images/liberty2.jpg')" class="attractionbutton">Image 2</button>
+				<button onclick="changeImage3('../images/liberty3.jpg')" class="attractionbutton">Image 3</button>
 			</div>
 			<div class="attractiondescription">
 				<p class="attractiondescription">The Statue of Liberty</p>
 				<p class="attractiondescription3">New-York, USA</p>
-				<img class="img-icon-attr" src="images/usa.jpg" alt="ireland" class="flagimg">			
+				<img class="img-icon-attr" src="../images/usa.jpg" alt="ireland" class="flagimg">			
 			</div>
 			<div class ="tourdescription">
 				<div class ="tourdescription-sub">
