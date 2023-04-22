@@ -1,0 +1,695 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial, Verdana, sans-serif;
+}
+body{
+	background-color: #b0f8c1;
+}
+.header{
+	width:100%;
+	height:80px;
+	background-color:pink ;
+	display:flex;
+	align-items:center;
+	box-sizing: border-box;
+}
+
+.headlink{
+    padding: 35px;
+	font-size:20px;
+	font-family: 'Trebuchet MS, sans-serif';
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+.headlink:link, .footerlink:link, .restwebsite:link, .restphonenumb:link {
+	text-decoration: none;
+}
+.headlink:visited, .footerlink:visited, .restwebsite:visited, .restphonenumb:visited {
+	text-decoration: none;
+}
+.headlink:hover, .footerlink:hover, .restwebsite:hover, .restphonenumb:hover, #showhide:hover {
+	text-decoration: underline;
+}
+.headlink:active, .footerlink:active, .restwebsite:active, .restphonenumb:active {
+	text-decoration: underline;
+}
+
+#logo{
+	margin-left: 1%;
+}
+
+#hotels,#restaurants,#homepage, #flights, #carrentals,#offers, #attractions, #contactus{
+	color:#B0D9F8 ;
+}
+
+.hotitle{
+	font-size:20px;
+	text-align:center;
+}
+
+.footer{
+	clear:both;
+	justify-content:space-evenly;
+	height:38px;
+	background-color:pink;
+	width:100%;
+	align-items:center;
+	display:flex;
+}
+
+.footerlink, .cright{
+	color:white;
+	font-size:15px;
+}
+
+/*------------------------------------CSS for Hotel page by Paulo Ribeiro-----------------------------------------*/
+
+.hoteldata{
+	display:flex;
+	justify-content:space-evenly;
+	box-sizing: border-box;
+	text-align:center;
+}
+
+.hoteldetails{
+	background-color:#c61975;
+	width:380px;
+	margin-top:10px;
+	margin-bottom:12px;
+	padding:20px;
+	border-radius:5px;
+	box-sizing: border-box;
+	height:612px;	
+}
+
+.hotelresults{
+	box-sizing: border-box;
+	margin-top:10px;
+	margin-bottom:12px;
+	width:70%;
+	padding:15px;
+	border-radius:5px;
+	height:612px;
+}
+
+.destfield{
+	margin-top:30px;
+	text-align:left;
+}
+
+#buttondiv{
+	text-align:center;
+}
+
+#destination, #checkin, #checkout{
+	width: 315px;
+	border-radius: 5px;
+	padding:8px;
+	margin-top:5px;
+	border: 1px solid #06244B;
+}
+
+#adult, #child{
+	width: 150px;
+	border-radius: 5px;
+	padding:8px;
+	margin-top:5px;
+	border: 1px solid #06244B;
+	text-align:center;
+}
+
+/* Hide arrows from input number in quantity field on Order page */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* minus and plus button style */
+.minus,.plus{
+	cursor:pointer;
+	width:25px;
+	height:20px;
+	background:#f2f2f2;
+	border-radius:4px;
+	padding-bottom:7px;
+	border:1px solid #ddd;
+	justify-content:center;
+	text-align: center;
+	display: inline-block;
+}
+
+#destination:focus, #checkin:focus, #checkout:focus, #adult:focus, #child:focus{
+	box-shadow: 0 0 3px #06244B;
+	outline:none;	
+}
+
+#button, .continue{
+	width: 167px;
+	border-radius: 5px;
+	padding:6px;
+	background-color: #b0f8c1;
+	font-size: 15px;
+	color:#06244B;
+	font-weight:bold;
+	border: 1px solid #3c0655;
+}
+
+#button:hover, .continue:hover{
+	background-color:#06244B;
+	cursor:pointer;
+	color:white;	
+}
+
+#hotel1, #hotel2, #hotel3{
+	display:flex;
+	margin-top:3px;
+	height:190px;
+}
+
+.hotelimg{
+	border:1px solid #B4B4B4;
+	width:292px;
+	position:relative;
+	overflow:hidden;	
+}
+
+#images, #images2{
+	position:absolute;
+	z-index:1;
+}
+
+/* previous and next button picture style */
+.btnprev, .btnnext{
+	position:absolute;
+	height:30px;
+	width:30px;
+	background:rgba(255,255,255,0.6);
+	cursor:pointer;
+	top:50%;
+	transform:translateY(-50%);
+	padding-top:10px;
+	z-index:2;
+}
+
+.btnprev{
+	left:0;
+}
+
+.btnnext{
+	right:0;
+}
+
+.hotelfeatures{
+	width:440px;
+	border:1px solid #B4B4B4;
+	padding-left:5px;
+	background-color:white;
+	text-align:left;
+}
+
+.hotelroom{
+	width:300px;
+	padding-top:18px;
+	padding-left:5px;
+	border:1px solid #B4B4B4;
+	background-color:white;
+}
+
+.restext, .hotext{
+	font-size:13px;
+	line-height:10px;
+}
+
+/*------------------------------------CSS for Restaurant page by Paulo Ribeiro-----------------------------------------*/
+
+.restaurantdata{
+	display:flex;
+	justify-content:space-evenly;
+	box-sizing: border-box;
+	text-align:center;
+}
+
+.restaurantdetails{
+	background-color:#C9E7F7;
+	width:380px;
+	margin-top:10px;
+	margin-bottom:12px;
+	padding:20px;
+	border-radius:5px;
+	box-sizing: border-box;
+}
+
+.restaurantresults{
+	box-sizing: border-box;
+	margin-top:10px;
+	margin-bottom:12px;
+	width:73%;
+	padding:5px;
+	border-radius:5px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+}
+
+.restfield, .otheroptions{
+	margin-top:20px;
+	text-align:left;
+}
+
+.restcategories{
+	border-bottom: 1px solid gray;
+	width:200px;
+	margin-left:20%;
+	font-size:13px;
+	padding-bottom:10px;
+}
+
+.restcategories input{
+	position:relative;
+	top:2px;
+	right: 2px;
+	margin-top:5px;
+}
+
+.restcategories h4{
+	margin-top:15px;
+	font-size:15px;
+}
+
+/*Toggle between hiding and showing more restaurant categories*/
+#showhide{
+	cursor:pointer;
+	margin-top:15px;
+	text-align:center;
+	font-weight:bold;
+}
+
+#showhideoptions{
+	display:none;
+}
+
+.restaurant1,.restaurant2, .restaurant3{
+	margin-top:3px;
+}
+
+.restimg, .restname, .restcontact, .restreview{
+	border:1px solid #B4B4B4;
+	width:338px;
+	box-sizing: border-box;
+	overflow:hidden;
+}
+
+.restname, .restcontact, .restreview{
+	padding:5px 5px 0 5px;
+	text-align:left;
+}
+
+.restname h4{
+	text-align:center;
+}
+
+.restimg{
+	height:208px;
+	position:relative;
+}
+
+.resultimg{
+	margin-top:-15px;
+}
+
+.cuisine{
+	margin-top:10px;
+}
+
+.restreview p, .restcontact p{
+	line-height:20px;
+	margin-bottom:-5px;
+}
+
+.restreview h6{
+	font-size:13px;
+	color:#06244B;
+}
+
+.customer{
+	font-style: italic;
+	margin-top:-15px;
+}
+
+.restphonenumb:before{
+	content:' \260F';
+}
+
+/*--------------------CSS for Hotel page by Paulo Ribeiro--------------------------*/
+
+.topbar{
+	width:100%;
+	height:80px;
+	background-color:#1C5545;
+	display:flex;
+	align-items:center;
+	box-sizing: border-box;
+}
+
+.toplink{
+    padding: 35px;
+	font-size:20px;
+	font-family: Trebuchet MS, sans-serif;
+	font-weight:bold;
+	color:#FFFFFF;
+	height:10px;
+}
+
+.topdiv{
+	border-radius:10px;
+}
+
+.toplink:link, .footerbar:link, .restwebsite:link, .restphonenumb:link {
+	text-decoration: none;
+}
+.toplink:visited, .footerbar:visited, .restwebsite:visited, .restphonenumb:visited {
+	text-decoration: none;
+}
+.footerbar:hover, .restwebsite:hover, .restphonenumb:hover, #showhide:hover {
+	text-decoration: underline;
+}
+.toplink:active, .footerbar:active, .restwebsite:active, .restphonenumb:active {
+	text-decoration: underline;
+}
+
+.topdiv:hover{
+	background-color: #8FDBC6;
+	transition: 0.5s;
+}
+.toplink:hover, #hotelink:hover{
+	color:black;
+	transition: 0.5s;
+}
+
+#hotelogo{
+	margin-left: 1%;
+}
+
+.footerbar{
+	clear:both;
+	justify-content:space-evenly;
+	height:38px;
+	background-color:#1C5545;
+	width:100%;
+	align-items:center;
+	display:flex;
+}
+
+.footerlink, .copyright{
+	color:white;
+	font-size:15px;
+}
+
+/*--------------------CSS for Flighths by Liu--------------------------*/
+
+.flightcontent{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("./images/plane.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+main {
+  padding: 2rem;
+  margin: 0 auto; 
+  max-width: 800px;
+  height:571px;
+
+}
+
+.flighth1{
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.flightlabels {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+#departure,#flightdest,#departdate,#returndate {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#flightsearchbtn {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#flightsearchbtn:hover {
+  background-color: #444;
+}
+
+/*-------------------------------CSS for Index by Liu--------------------------------*/
+
+.header-home{
+	background-image: url("./images/1005-1600x600.jpg");
+	background-size: cover;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+}
+
+.h1-home{
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.p-home {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.btn-home {
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn-home:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.sec-home {
+	padding: 50px;
+}
+
+.about-us {
+	background-color: #f9f9f9;
+}
+
+.featured-destinations {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.destination-card {
+	width: 400px;
+	margin: 20px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.destination-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.destination-card h3 {
+	font-size: 24px;
+	margin: 20px;
+}
+
+.destination-card p {
+	font-size: 18px;
+	margin: 0 20px 20px 20px;
+}
+
+.testimonials {
+	background-color: #f9f9f9;
+}
+
+.testimonial-card {
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	margin-bottom: 20px;
+}
+
+.testimonial-card img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.testimonial-card p {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.testimonial-card p:last-child {
+	margin-bottom: 0;
+}
+
+
+
+/*-------------------------media Q for Hotel and Restaurant by Paulo Ribeiro-------------------------------*/
+
+@media screen and (max-width:1300px) {
+	
+	.headlink {
+		padding: 25px;
+		font-size:18px;
+	}
+	
+	.hotelresults{
+		width:65%;
+	}
+	
+	.restext, .hotext{
+		font-size:12px;
+	}
+	
+	.hotelroom{
+		width:210px;
+	}
+	
+	.continue{
+		width: 100px;
+	}
+}
+
+@media screen and (max-width:1100px) {
+	
+	.headlink {
+		padding: 17px;
+		font-size:13px;
+	}
+	
+	.hoteldetails{	
+		width:205px;
+	}
+
+	#destination, #checkin, #checkout{
+		width: 145px;
+	}
+	
+	#adult, #child{
+		width: 80px;
+	}
+	
+	.hotelresults{
+		width:75%;
+	}
+}
+
+@media screen and (max-width:828px) {
+	
+	.header{
+		height:90px;
+		display:inline-block;
+	}
+	
+	.headlink {
+		padding:10px;
+	}
+	
+	.hoteldetails{
+		width:430px;
+		margin-left:1%;
+		text-align:center;
+	}
+	
+	#hotel1, #hotel2, #hotel3{
+		display:inline-block;
+		height:190px;
+		padding-top:10px;
+	}
+	
+	.hoteldata, .hoteldetails, .hotelresults, .restaurantdata, .restaurantdetails, .restaurantresults {
+		display:inline-block;
+	}
+	
+	#destination, #checkin, #checkout{
+		width: 315px;
+	}
+
+	#adult, #child{
+		width: 150px;
+	}
+	
+	.hotelresults{
+		width:430px;
+		height:1710px;
+	}
+	
+	.hotelimg{
+		height:189px;
+		margin-left:48px;
+	}
+	
+	#logo{
+		margin-top:10px;
+	}
+	
+	.hotelfeatures, .hotelroom{
+		width:287px;
+		margin-left:48px;
+		text-align:center;
+	}
+	
+	.footer{
+		display:inline-block;
+		height:45px;
+	}
+	
+	.footerlink, .cright{
+		font-size:13px;
+		margin-left:15px;
+	}

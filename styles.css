@@ -1,0 +1,1180 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+.header {
+	width: 100%;
+	height: 80px;
+	background-color: #06244B;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.headlink {
+	padding: 35px;
+	font-size: 20px;
+	font-family: 'Trebuchet MS, sans-serif';
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.headlink:link,
+.footerlink:link,
+.restwebsite:link,
+.restphonenumb:link {
+	text-decoration: none;
+}
+
+.headlink:visited,
+.footerlink:visited,
+.restwebsite:visited,
+.restphonenumb:visited {
+	text-decoration: none;
+}
+
+.headlink:hover,
+.footerlink:hover,
+.restwebsite:hover,
+.restphonenumb:hover,
+#showhide:hover {
+	text-decoration: underline;
+}
+
+.headlink:active,
+.footerlink:active,
+.restwebsite:active,
+.restphonenumb:active {
+	text-decoration: underline;
+}
+
+#logo {
+	margin-left: 1%;
+}
+
+#hotels,
+#restaurants,
+#homepage,
+#flights,
+#carrentals,
+#offers,
+#attractions,
+#contactus {
+	color: #B0D9F8;
+}
+
+.hotitle {
+	font-size: 20px;
+	text-align: center;
+}
+
+.footer {
+	clear: both;
+	justify-content: space-evenly;
+	height: 35px;
+	background-color: #06244B;
+	width: 100%;
+	align-items: center;
+	display: flex;
+	position: fixed;
+	bottom: 0;
+}
+
+.footerlink,
+.cright {
+	color: white;
+	font-size: 15px;
+}
+
+/*------------------------------------CSS for Hotel page by Paulo Ribeiro-----------------------------------------*/
+
+.hoteldata {
+	display: flex;
+	justify-content: space-evenly;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.hoteldetails {
+	background-color: #C9E7F7;
+	width: 380px;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	padding: 20px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	height: 612px;
+}
+
+.hotelresults {
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	width: 70%;
+	padding: 15px;
+	border-radius: 5px;
+	height: 612px;
+}
+
+.destfield {
+	margin-top: 30px;
+	text-align: left;
+}
+
+#buttondiv {
+	text-align: center;
+}
+
+#destination,
+#checkin,
+#checkout {
+	width: 315px;
+	border-radius: 5px;
+	padding: 8px;
+	margin-top: 5px;
+	border: 1px solid #06244B;
+}
+
+#adult,
+#child {
+	width: 150px;
+	border-radius: 5px;
+	padding: 8px;
+	margin-top: 5px;
+	border: 1px solid #06244B;
+	text-align: center;
+}
+
+/* Hide arrows from input number in quantity field on Order page */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+/* minus and plus button style */
+.minus,
+.plus {
+	cursor: pointer;
+	width: 25px;
+	height: 20px;
+	background: #f2f2f2;
+	border-radius: 4px;
+	padding-bottom: 7px;
+	border: 1px solid #ddd;
+	justify-content: center;
+	text-align: center;
+	display: inline-block;
+}
+
+#destination:focus,
+#checkin:focus,
+#checkout:focus,
+#adult:focus,
+#child:focus {
+	box-shadow: 0 0 3px #06244B;
+	outline: none;
+}
+
+#button,
+.continue {
+	width: 167px;
+	border-radius: 5px;
+	padding: 6px;
+	background-color: #B0D9F8;
+	font-size: 15px;
+	color: #06244B;
+	font-weight: bold;
+	border: 1px solid #06244B;
+}
+
+#button:hover,
+.continue:hover {
+	background-color: #06244B;
+	cursor: pointer;
+	color: white;
+}
+
+#hotel1,
+#hotel2,
+#hotel3 {
+	display: flex;
+	margin-top: 3px;
+	height: 190px;
+}
+
+.hotelimg {
+	border: 1px solid #B4B4B4;
+	width: 292px;
+	position: relative;
+	overflow: hidden;
+}
+
+#images,
+#images2 {
+	position: absolute;
+	z-index: 1;
+}
+
+/* previous and next button picture style */
+.btnprev,
+.btnnext {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background: rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-top: 10px;
+	z-index: 2;
+}
+
+.btnprev {
+	left: 0;
+}
+
+.btnnext {
+	right: 0;
+}
+
+.hotelfeatures {
+	width: 440px;
+	border: 1px solid #B4B4B4;
+	padding-left: 5px;
+	background-color: white;
+	text-align: left;
+}
+
+.hotelroom {
+	width: 300px;
+	padding-top: 18px;
+	padding-left: 5px;
+	border: 1px solid #B4B4B4;
+	background-color: white;
+}
+
+.restext,
+.hotext {
+	font-size: 13px;
+	line-height: 10px;
+}
+
+/*------------------------------------CSS for Restaurant page by Paulo Ribeiro-----------------------------------------*/
+
+.restaurantdata {
+	display: flex;
+	justify-content: space-evenly;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.restaurantdetails {
+	background-color: #C9E7F7;
+	width: 380px;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	padding: 20px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.restaurantresults {
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 12px;
+	width: 73%;
+	padding: 5px;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.restfield,
+.otheroptions {
+	margin-top: 20px;
+	text-align: left;
+}
+
+.restcategories {
+	border-bottom: 1px solid gray;
+	width: 200px;
+	margin-left: 20%;
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+
+.restcategories input {
+	position: relative;
+	top: 2px;
+	right: 2px;
+	margin-top: 5px;
+}
+
+.restcategories h4 {
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+/*Toggle between hiding and showing more restaurant categories*/
+#showhide {
+	cursor: pointer;
+	margin-top: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#showhideoptions {
+	display: none;
+}
+
+.restaurant1,
+.restaurant2,
+.restaurant3 {
+	margin-top: 3px;
+}
+
+.restimg,
+.restname,
+.restcontact,
+.restreview {
+	border: 1px solid #B4B4B4;
+	width: 338px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.restname,
+.restcontact,
+.restreview {
+	padding: 5px 5px 0 5px;
+	text-align: left;
+}
+
+.restname h4 {
+	text-align: center;
+}
+
+.restimg {
+	height: 208px;
+	position: relative;
+}
+
+.resultimg {
+	margin-top: -15px;
+}
+
+.cuisine {
+	margin-top: 10px;
+}
+
+.restreview p,
+.restcontact p {
+	line-height: 20px;
+	margin-bottom: -5px;
+}
+
+.restreview h6 {
+	font-size: 13px;
+	color: #06244B;
+}
+
+.customer {
+	font-style: italic;
+	margin-top: -15px;
+}
+
+.restphonenumb:before {
+	content: ' \260F';
+}
+
+/*--------------------CSS for Hotel page by Paulo Ribeiro--------------------------*/
+
+.topbar {
+	width: 100%;
+	height: 80px;
+	background-color: #1C5545;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.toplink {
+	padding: 35px;
+	font-size: 20px;
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 10px;
+}
+
+.topdiv {
+	border-radius: 10px;
+}
+
+.toplink:link,
+.footerbar:link,
+.restwebsite:link,
+.restphonenumb:link {
+	text-decoration: none;
+}
+
+.toplink:visited,
+.footerbar:visited,
+.restwebsite:visited,
+.restphonenumb:visited {
+	text-decoration: none;
+}
+
+.footerbar:hover,
+.restwebsite:hover,
+.restphonenumb:hover,
+#showhide:hover {
+	text-decoration: underline;
+}
+
+.toplink:active,
+.footerbar:active,
+.restwebsite:active,
+.restphonenumb:active {
+	text-decoration: underline;
+}
+
+.topdiv:hover {
+	background-color: #8FDBC6;
+	transition: 0.5s;
+}
+
+.toplink:hover,
+#hotelink:hover {
+	color: black;
+	transition: 0.5s;
+}
+
+#hotelogo {
+	margin-left: 1%;
+}
+
+.footerbar {
+	clear: both;
+	justify-content: space-evenly;
+	height: 38px;
+	background-color: #1C5545;
+	width: 100%;
+	align-items: center;
+	display: flex;
+}
+
+.footerlink,
+.copyright {
+	color: white;
+	font-size: 15px;
+}
+
+/*--------------------CSS for Flighths by Liu--------------------------*/
+
+.flightcontent {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-image: url("./images/plane.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+main {
+	padding: 2rem;
+	margin: 0 auto;
+	max-width: 800px;
+	height: 571px;
+
+}
+
+.flighth1 {
+	color: #fff;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.flightlabels {
+	display: block;
+	margin-bottom: 0.5rem;
+	color: #fff;
+}
+
+#departure,
+#flightdest,
+#departdate,
+#returndate {
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+
+#flightsearchbtn {
+	background-color: #333;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#flightsearchbtn:hover {
+	background-color: #444;
+}
+
+/*-------------------------------CSS for Index by Liu--------------------------------*/
+
+.header-home {
+	background-image: url("./images/1005-1600x600.jpg");
+	background-size: cover;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+}
+
+.h1-home {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.p-home {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.btn-home {
+	background-color: #fff;
+	color: #333;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn-home:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.sec-home {
+	padding: 50px;
+}
+
+.about-us {
+	background-color: #e7e3d4;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.about-us p {
+	margin-top: 10px;
+}
+
+.featured-destinations {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.destination-card {
+	width: 400px;
+	margin: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.destination-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.destination-card h3 {
+	font-size: 24px;
+	margin: 20px;
+}
+
+.destination-card p {
+	font-size: 18px;
+	margin: 0 20px 20px 20px;
+}
+
+.testimonials {
+	background-color: #f9f9f9;
+}
+
+.testimonial-card {
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	margin-bottom: 20px;
+}
+
+.testimonial-card img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.testimonial-card p {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.testimonial-card p:last-child {
+	margin-bottom: 0;
+}
+
+/*------------------------------------CSS for Attraction page by Zhuldyz-----------------------------------------*/
+
+/* Style the page layout */
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+.item {
+	flex: none;
+}
+
+/* Style the flag pic */
+
+.flagimg {
+
+	width: 45px;
+	height: 35px;
+}
+
+/* Style the list for attraction package */
+
+ul {
+
+	text-decoration-color: red;
+}
+
+li {
+
+	text-decoration-color: red;
+}
+
+/* Style the attraction description */
+
+.attractiondescription {
+	color: black;
+	display: inline-block;
+	font-size: 20px;
+	text-shadow: 3px 3px 3px #ababab;
+	text-align: center;
+}
+
+.attractiondescription1 {
+	color: black;
+	font-size: 15px;
+	text-shadow: 3px 3px 3px #ababab;
+}
+
+.attractiondescription2 {
+	color: black;
+	font-size: 15px;
+	/*text-shadow: 3px 3px 3px #ababab;*/
+}
+
+.attractionheader {
+	color: #75BAD3;
+	font-size: 23px;
+	margin-top: 15px;
+}
+
+.attractionbutton {
+	color: black;
+	font-size: 15px;
+	text-shadow: 3px 3px 3px #ababab;
+}
+
+.attractionprice {
+	color: #6495ED;
+	font-family: Trebuchet MS, sans-serif;
+	;
+	font-size: 15px;
+	text-shadow: 3px 3px 3px #ababab;
+}
+
+.attractiondescription3 {
+	color: black;
+	font-size: 14px;
+	/*text-shadow: 3px 3px 3px #ababab;*/
+}
+
+.item-img-attr {
+	width: 280px;
+	height: 180px;
+}
+
+.img-icon-attr {
+	width: 52px;
+	height: 39px;
+}
+
+.tourdescription-sub {
+	width: 280px;
+	height: 130px;
+}
+
+/*------------------------------------CSS for Offer page-----------------------------------------*/
+
+/* Style the header */
+
+.offerheader {
+	color: #06244B;
+	font-size: 23px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+/* Container for flexboxes */
+.offersection {
+	display: flex;
+	height: 586px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+/* Style the choice menu*/
+.dealfield {
+	background-color: #C9E7F7;
+	padding: 20px;
+	box-sizing: border-box;
+	width: 360px;
+	border-radius: 10px;
+	height: 400px;
+}
+
+
+#dropdownOffer,
+#email {
+	width: 320px;
+	height: 30px;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+
+.dealfield .offermenu {
+	margin-top: 15px;
+}
+
+.offermenu {
+	color: black;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.offermenu1 {
+	color: black;
+	display: inline-block;
+	font-size: 14px;
+}
+
+
+/* Style the content */
+.articleclass {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	background-color: white;
+	padding: 10px;
+}
+
+/* Style the clock */
+
+.clock {
+	width: 45px;
+	height: 35px;
+	display: inline-block;
+}
+
+
+/* Style the offer description */
+
+.offerdescription {
+	color: black;
+	display: inline-block;
+	font-size: 20px;
+	/*text-shadow: 3px 3px 3px #ababab;*/
+}
+
+/* Style the offer description */
+
+.offerprice {
+	color: red;
+	font-size: 14px;
+	text-shadow: 3px 3px 3px #ababab;
+	text-align: left;
+}
+
+
+.offerdescription1 {
+	color: red;
+	font-size: 18px;
+	text-shadow: 3px 3px 3px #ababab;
+	text-align: left;
+}
+
+
+#offersubmit {
+	height: 35px;
+	width: 250px;
+	border-radius: 10px;
+}
+
+#offersubmit:hover {
+	background-color: #06244B;
+	color: white;
+}
+
+.div-h2 {
+	height: 50px;
+}
+
+.img-offer {
+	width: 280px;
+	height: 200px;
+}
+
+.clock {
+	width: 45px;
+	height: 45px;
+}
+
+.btn-p-offer {
+	width: 280px;
+	height: 120px;
+}
+
+.div-img {
+	height: 230px;
+}
+
+.img-clock-p {
+	height: 80px;
+}
+
+/*---------------------------------CSS for Car Rentals by Alfred Omar--------------------------------------*/
+#h1-contact{
+	margin: 10px;
+	text-align: center;
+}
+
+.form-alfred {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	height: 60%;
+}
+
+#rentForm button {
+	display: block;
+	margin-top: 20px;
+}
+
+#rentForm input {
+	width: 180px;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#carform {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	height: 680px;
+}
+
+#rentFormDiv {
+	display: flex;
+	flex-direction: column;
+}
+
+#message {
+	height: 190px;
+}
+
+.label-alfred {
+	display: block;
+	margin-top: 10px;
+}
+
+.label-contact {
+	display: block;
+	margin-top: 5px;
+}
+
+.input-text-email-alfred,
+textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.input-submit-alfred {
+	background-color: #008CBA;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.input-submit-alfred:hover {
+	background-color: #006F8E;
+}
+
+.table-alfred {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.th-alfred,
+.td-alfred {
+	text-align: left;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+.th-alfred {
+	background-color: #f2f2f2;
+}
+
+.car-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.h2-alfred {
+	font-size: 20px;
+	text-align: center;
+}
+
+.car-image {
+	cursor: pointer;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car-image:hover {
+	transform: scale(1.1);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-rent {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 30%;
+	height: 60%;
+}
+
+#selectedCar {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.close-rent {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close-rent:hover,
+.close-rent:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*---------------------------------CSS for Contact us by Alfred Omar--------------------------------------*/
+
+
+/*-------------------------media Q for Hotel and Restaurant by Paulo Ribeiro-------------------------------*/
+
+@media screen and (max-width:1300px) {
+
+	.headlink {
+		padding: 25px;
+		font-size: 18px;
+	}
+
+	.hotelresults {
+		width: 65%;
+	}
+
+	.restext,
+	.hotext {
+		font-size: 12px;
+	}
+
+	.hotelroom {
+		width: 210px;
+	}
+
+	.continue {
+		width: 100px;
+	}
+}
+
+@media screen and (max-width:1100px) {
+
+	.headlink {
+		padding: 17px;
+		font-size: 13px;
+	}
+
+	.hoteldetails {
+		width: 205px;
+	}
+
+	#destination,
+	#checkin,
+	#checkout {
+		width: 145px;
+	}
+
+	#adult,
+	#child {
+		width: 80px;
+	}
+
+	.hotelresults {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width:828px) {
+
+	.header {
+		height: 90px;
+		display: inline-block;
+	}
+
+	.headlink {
+		padding: 10px;
+	}
+
+	.hoteldetails {
+		width: 430px;
+		margin-left: 1%;
+		text-align: center;
+	}
+
+	#hotel1,
+	#hotel2,
+	#hotel3 {
+		display: inline-block;
+		height: 190px;
+		padding-top: 10px;
+	}
+
+	.hoteldata,
+	.hoteldetails,
+	.hotelresults,
+	.restaurantdata,
+	.restaurantdetails,
+	.restaurantresults {
+		display: inline-block;
+	}
+
+	#destination,
+	#checkin,
+	#checkout {
+		width: 315px;
+	}
+
+	#adult,
+	#child {
+		width: 150px;
+	}
+
+	.hotelresults {
+		width: 430px;
+		height: 1710px;
+	}
+
+	.hotelimg {
+		height: 189px;
+		margin-left: 48px;
+	}
+
+	#logo {
+		margin-top: 10px;
+	}
+
+	.hotelfeatures,
+	.hotelroom {
+		width: 287px;
+		margin-left: 48px;
+		text-align: center;
+	}
+
+	.footer {
+		display: inline-block;
+		height: 45px;
+	}
+
+	.footerlink,
+	.cright {
+		font-size: 13px;
+		margin-left: 15px;
+	}
+}

@@ -1,0 +1,315 @@
+
+*{
+	margin:0;
+	padding:0;
+	font-family: Futura PT;
+	
+}
+
+.footer {
+ /* position: absolute;*/
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; 
+  clear:both;
+justify-content:space-evenly;
+	font-family: Futura PT;
+
+}
+
+.footer{
+	clear:both;
+	justify-content:space-evenly;
+	height:38px;
+	background-color:#5C1F1A;
+	width:100%;
+	align-items:center;
+	display:flex;
+}
+
+
+.header{
+	width:100%;
+	height:50px;
+	background-color:#5C1F1A;
+	display:flex;
+	align-items:center;
+	box-sizing: border-box;
+}
+
+.headlink{
+    padding: 35px;
+	font-size:20px;
+	font-family: Futura PT;
+	font-weight:bold;
+	color:white;
+}
+
+
+
+.headlink:link,
+.footerlink:link,
+.restwebsite:link,
+.restphonenumb:link {
+text-decoration: none;
+	font-family: Futura PT;
+color: white; /* Change the color to a dark gray */
+}
+
+.headlink:visited,
+.footerlink:visited,
+.restwebsite:visited,
+.restphonenumb:visited {
+text-decoration: none;
+	font-family: Futura PT;
+color: white; 
+}
+
+.headlink:hover,
+.footerlink:hover,
+.restwebsite:hover,
+.restphonenumb:hover,
+#showhide:hover {
+text-decoration: none;
+color: white;
+	font-family: Futura PT;
+border-bottom: 1px solid #DEB3AD; 
+}
+
+.headlink:active,
+.footerlink:active,
+.restwebsite:active,
+.restphonenumb:active {
+text-decoration: none;
+color: #DEB3AD; 
+	font-family: Futura PT;
+border-bottom: 2px solid #DEB3AD; /* Add a bolder underline */
+}
+
+#logo{
+	margin-right: 1%; 
+}
+
+#hotels,#restaurants,#home, #flights, #carrentals,#offers, #attractions, #contactus{
+	color:#DE847B; 	font-family: Futura PT;
+}
+
+h2{
+	font-size:20px;
+	text-align:center;
+		font-family: Futura PT;
+}
+
+
+
+.footerlink, .cright{
+	color:white;
+	font-size:15px;
+		font-family: Futura PT;
+}
+
+/* hotel css */
+
+.hoteldata{
+	display:flex;
+	justify-content:space-evenly;
+	box-sizing: border-box;
+	text-align:center;
+		font-family: Futura PT;
+	
+}
+
+
+
+.hoteldetails {
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+   border:2px solid #B4B4B4;
+  background-color:#DB8780;
+} 
+
+
+.hotelresults{
+	/*background-color:white;*/
+	width:100%;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:20px;
+	box-sizing: border-box;
+	height:612px;
+	  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destfield{
+	margin-top:70px;
+	text-align:left;
+	color: white;
+	font-family: Futura PT;
+	font-weight:bold;
+	display: inline;
+
+}
+
+#buttondiv{
+	text-align:center;
+		font-family: Futura PT;
+}
+
+#destination, #checkin, #checkout{
+	width: 315px;
+	border-radius: 5px;
+	padding:8px;
+	margin-top:3px;
+		font-family: Futura PT;
+	
+}
+
+#adult, #child{
+	width: 150px;
+	border-radius: 5px;
+	padding:8px;
+	margin-top:5px;
+	border: 1px solid #98DBBB;
+	text-align:center;
+		font-family: Futura PT;
+}
+
+
+
+#destination:focus, #checkin:focus, #checkout:focus, #adult:focus, #child:focus{
+	box-shadow:0 0 5px #52b788;
+	outline:none;	
+		font-family: Futura PT;
+}
+
+#button, #continue {
+width: 167px;
+border-radius: 5px;
+padding: 8px;
+background-color: #DEB3AD;
+font-size: 18px;
+color: white;
+font-weight: bold;
+border: 2px solid #06244B;
+	font-family: Futura PT;
+}
+
+#hotel1, #hotel2, #hotel3{
+	
+	display:flex;
+	margin-top:3px;
+	height:190px;
+		font-family: Futura PT;
+}
+
+#hotelimg{
+	border:2px solid #B4B4B4;
+	width:300px;
+	position:relative;
+	overflow:hidden;	
+		padding-left:35px;
+		padding-right:30px;
+
+}
+
+#images, #images2{
+	position:absolute;
+	z-index:1;
+}
+
+/* previous and next button picture style */
+.btn{
+position: absolute;
+height: 30px;
+width: 30px;
+background: #DE847B;
+cursor: pointer;
+top: 50%;
+transform: translateY(-50%);
+padding-top: 10px;
+z-index: 2;
+font-weight: bold;
+color: white;
+}
+#prev{
+	left:0;
+}
+
+#next{
+	right:0;
+}
+
+#hotelfeatures{
+	width:540px;
+	border:1px solid #B4B4B4;
+	padding-left:35px;
+	background-color:white;
+	text-align:center;
+		font-family: Futura PT;
+}
+
+#hotelroom{
+		width:300px;
+	padding-top:18px;
+	padding-left:5px;
+	border:1px solid #B4B4B4;
+	background-color:white;
+		font-family: Futura PT;
+}
+
+p{
+	font-size:15px;
+	line-height:10px;
+		font-family: Futura PT;
+}
+
+
+.myheading {
+font-family: Futura PT;
+font-size: 25px;
+text-align: center;
+color: white;
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+  body {
+    font-size: 12px;
+  }
+  
+  #logo {
+    width: 90px;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+
+  .destfield input[type="text"], 
+  
+  .destfield input[type="date"], 
+  
+  .destfield input[type="number"] {
+    width: 100%;
+  }
+  
+
+  .destfield label {
+    font-size: 0.10em;
+  }
+  
+  
+  #button {
+    width: 100%;
+  }
+}

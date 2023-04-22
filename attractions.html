@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Nook - Attractions</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Style to make a website responsive-->
+<style> 
+
+	@media only screen and (max-width: 768px) {
+	  .attractionbutton {
+		width: 100%;
+	  }
+	  .attractionheader {
+		font-size: 20px;
+	  }
+	  .attractiondescription {
+		font-size: 15px;
+	  }
+	  .attractiondescription1 {
+		font-size: 12px;
+	  }
+	  .attractiondescription2 {
+		font-size: 13px;
+	  }
+	  .attractiondescription3 {
+		font-size: 12px;
+	  }
+	  .attractionprice {
+		font-size: 18px;
+	  }
+	  
+	  #image, #image1, #image2 {
+		max-width: 100%;
+		height: auto;
+	  }
+	  
+	  .item img {
+		display: block;
+		margin: 0 auto;
+	  }
+	 
+	  .container {
+		width: 100%;
+		padding: 0;
+	  }
+	  
+	  .item {
+		margin-bottom: 50px;
+	  }
+	}
+</style>
+<script src="script.js"></script>
+</head>
+	
+<body>
+	<!-- Top navigation bar-->
+	<nav class="header">
+		<img src="images/logo.png" alt="logo" id="logo">
+        <a href="index.html" class="headlink">Home</a>
+		<a href="flights.html" class="headlink">Flights</a>
+		<a href="hotels.html" class="headlink">Hotels</a>
+		<a href="carrental.html" class="headlink">Car Rentals</a>
+		<a href="restaurants.html" class="headlink">Restaurants</a>
+		<a href="offer.html" class="headlink">Offers</a>
+		<a href="attractions.html" class="headlink" id="attractions">Attractions</a>
+		<a href="contact.html" class="headlink">Contact us</a>
+	</nav>
+	<h2 class="attractionheader"> Experience great time at attractions around the world </h2>
+	<!-- Display the list of Attractions-->
+	<div class="container">
+	<!--Cliffs of Moher Attraction-->
+		<div class="item">
+			<img id="image" class="item-img-attr" src="images/cliffs1.jpg" alt="Image">
+			<div class="btn-container">
+				<button onclick="changeImage('images/cliffs1.jpg')" class="attractionbutton">Image 1</button>
+				<button onclick="changeImage('images/cliffs2.jpg')" class="attractionbutton">Image 2</button>
+				<button onclick="changeImage('images/cliffs3.jpg')" class="attractionbutton">Image 3</button>
+			</div>
+			
+			<div class="attractiondescription">
+				<p class="attractiondescription">The Cliffs of Moher</p>
+				<p class="attractiondescription3">Co. Clare, Ireland</p>
+				<img class="img-icon-attr" src="images/irl.jpg" alt="ireland" class="flagimg">			
+			</div>
+			<div class ="tourdescription">
+				<div class ="tourdescription-sub">
+					<p class="attractiondescription1">What is included:</p>
+					<ul class="attractiondescription2"> 
+						<li class="attractiondescription2">Private bus transportation</li>
+						<li class="attractiondescription2">Local guide</li>
+						<li class="attractiondescription2">Transfers to and from the Cliffs of Moher</li>
+						<li class="attractiondescription2">Lunch</li>
+					</ul>
+					<p class="attractionprice">125 &euro; pp</p>
+					<p class="attractiondescription2">Includes taxes and charges</p>
+				</div>
+				<button type="submit" class="attractionbutton">Book now</button> 
+			</div>
+		</div>
+	<!--Louvre Attraction-->
+		<div class="item">
+			<img id="image1" class="item-img-attr" src="images/louvre1.jpg" alt="Image 1">
+			<div class="btn-container">
+				<button onclick="changeImage1('images/louvre1.jpg')" class="attractionbutton">Image 1</button>
+				<button onclick="changeImage1('images/louvre2.jpg')" class="attractionbutton">Image 2</button>
+				<button onclick="changeImage1('images/louvre3.jpg')" class="attractionbutton">Image 3</button>
+			</div>
+			<div class="attractiondescription">
+				<p class="attractiondescription">Louvre Museum</p>
+				<p class="attractiondescription3">Paris, France</p>
+				<img class="img-icon-attr" src="images/frn.jpg" alt="Louvre" class="flagimg">		
+			</div>
+			<div class ="tourdescription">
+				<div class ="tourdescription-sub">
+					<p class="attractiondescription1">What is included:</p>
+					<ul> 
+						<li class="attractiondescription2">Entry/Admission</li>
+						<li class="attractiondescription2">Live guide</li>
+						<li class="attractiondescription2">Skip-the-line access</li>
+						<li class="attractiondescription2">Discover the pyramid of Ieoh Ming Pei</li>						
+					</ul>
+					<p class="attractionprice">80 &euro; pp</p>
+					<p class="attractiondescription2">Includes taxes and charges</p>
+				</div>
+				<button type="submit" class="attractionbutton">Book now</button> 
+			</div>
+		</div>
+	<!--Park Guell -->
+		<div class="item">
+			<img id="image2" class="item-img-attr" src="images/guel1.jpg" alt="Image 2">
+			<div class="btn-container">
+				<button onclick="changeImage2('images/guel1.jpg')" class="attractionbutton">Image 1</button>
+				<button onclick="changeImage2('images/guel2.jpg')" class="attractionbutton">Image 2</button>
+				<button onclick="changeImage2('images/guel3.jpg')" class="attractionbutton">Image 3</button>
+			</div>
+			<div class="attractiondescription">
+				<p class="attractiondescription">Park Guell</p>
+				<p class="attractiondescription3">Barcelona, Spain</p>
+				<img class="img-icon-attr" src="images/spn.jpg" alt="Park Guell" class="flagimg">			
+			</div>
+			<div class ="tourdescription">
+				<div class ="tourdescription-sub">
+					<p class="attractiondescription1">What is included:</p>
+					<ul> 
+						<li class="attractiondescription2">Guided Tour</li>
+						<li class="attractiondescription2">Ticket with skip the line entrance</li>
+						<li class="attractiondescription2">Certified Tour Guide from Barcelona</li>
+					</ul>
+					<p class="attractionprice">25 &euro; pp</p>
+					<p class="attractiondescription2">Includes taxes and charges</p>
+				</div>
+				<button type="submit" class="attractionbutton">Book now</button> 
+			</div>
+		</div>
+		<!--the Statue of Liberty -->
+		<div class="item">
+			<img id="image3" class="item-img-attr" src="images/liberty1.jpg" alt="Image 3">
+			<div class="btn-container">
+				<button onclick="changeImage3('images/liberty1.jpg')" class="attractionbutton">Image 1</button>
+				<button onclick="changeImage3('images/liberty2.jpg')" class="attractionbutton">Image 2</button>
+				<button onclick="changeImage3('images/liberty3.jpg')" class="attractionbutton">Image 3</button>
+			</div>
+			<div class="attractiondescription">
+				<p class="attractiondescription">The Statue of Liberty</p>
+				<p class="attractiondescription3">New-York, USA</p>
+				<img class="img-icon-attr" src="images/usa.jpg" alt="ireland" class="flagimg">			
+			</div>
+			<div class ="tourdescription">
+				<div class ="tourdescription-sub">
+					<p class="attractiondescription1">What is included:</p>
+					<ul> 
+						<li class="attractiondescription2">Guided Tour</li>
+						<li class="attractiondescription2">50-minute cruise</li>
+						<li class="attractiondescription2">Welcome drink</li>
+					</ul>
+					<p class="attractionprice">35 &euro; pp</p>
+					<p class="attractiondescription2">Includes taxes and charges</p>
+				</div>
+				<button type="submit" class="attractionbutton">Book now</button> 
+			</div>
+		</div>
+	</div>				
+	<nav class="footer">
+        <a href="" class="footerlink">About us</a>
+		<a href="" class="footerlink">Privacy Statement</a>
+		<a href="" class="footerlink">Term & Conditions</a>
+		<a href="" class="footerlink">Cookie Policy</a>
+		<a href="" class="footerlink">Career</a>
+		<span class="cright">© 2023, Travel Nook. All rights reserved</span>
+	</nav > 
+	</body>
+
+</html>

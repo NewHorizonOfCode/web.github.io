@@ -1,0 +1,330 @@
+
+/*--------------------CSS for Hotel page by Paulo Ribeiro--------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+.header{
+	width:100%;
+	height:80px;
+	background-color:#1C5545;
+	display:flex;
+	align-items:center;
+	box-sizing: border-box;
+}
+
+.headlink{
+    padding: 28px;
+	font-size:20px;
+	font-family: 'Trebuchet MS, sans-serif';
+	font-weight:bold;
+	color:#FFFFFF;
+	
+}
+
+#logo{
+	margin-left: 1%;
+}
+
+.hotitle{
+	display:none;
+}
+
+.headlink:link, .footerbar:link {
+	text-decoration: none;
+}
+
+.headlink:visited, .footerbar:visited {
+	text-decoration: none;
+}
+
+.footerbar:hover, .restwebsite:hover{
+	text-decoration: underline;
+}
+
+.headlink:active, .footerbar:active {
+	text-decoration: underline;
+}
+
+.headlink:hover, #hotels:hover{
+	color:black;
+	transition: 0.5s;
+	background-color:#8FDBC6;
+}
+
+#hotels{
+	color:#8FDBC6;
+}
+
+.hoteldata{
+	justify-content:space-evenly;
+	box-sizing: border-box;
+}
+
+.hoteldetails{
+	box-sizing: border-box;
+	background-color:#8FDBC6;
+	width:100%;
+	margin-top:10px;
+	border-radius:5px;
+	box-sizing: border-box;
+	justify-content:space-evenly;
+	display: flex;
+	height:100px;
+}
+
+.destfield{
+	margin-top:30px;
+}
+
+#destination, #checkin, #checkout{
+	width: 160px;
+	border-radius: 5px;
+	padding:8px;
+	margin-top:5px;
+	border: 1px solid #06244B;
+}
+
+#adult, #child{
+	width: 60px;
+	border-radius: 5px;
+	padding:8px;
+	margin-top:5px;
+	border: 1px solid #06244B;
+	text-align:center;
+}
+
+/* Hide arrows from input number in quantity field on Order page */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.plus,.minus{
+	cursor:pointer;
+	width:25px;
+	height:20px;
+	background:#f2f2f2;
+	border-radius:4px;
+	padding-bottom:7px;
+	border:1px solid #ddd;
+	justify-content:center;
+	text-align: center;
+	display: inline-block;
+}
+
+#destination:focus, #checkout:focus, #checkin:focus, #adult:focus, #child:focus{
+	box-shadow: 0 0 3px #1C5545;
+	outline:none;	
+}
+
+#buttondiv{
+	text-align:center;
+}
+
+#button, .continue{
+	width: 100px;
+	border-radius: 5px;
+	padding:6px;
+	background-color: #D0FAEF;
+	font-size: 15px;
+	color:#1C5545;
+	font-weight:bold;
+	border: 1px solid #06244B;
+}
+
+.destfield #button {
+	margin-top:24px;
+}
+
+.hotelsearch #button{
+	margin-top:13px;
+}
+
+#button:hover, .continue:hover{
+	background-color:#1C5545;
+	cursor:pointer;
+	color:white;	
+}
+
+.hotelresults{
+	box-sizing: border-box;
+	margin-top:10px;
+	margin-bottom:12px;
+	width:100%;
+	padding:15px;
+	border-radius:5px;
+	height:630px;
+	flex-wrap:wrap;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+#hotel1, #hotel2, #hotel3{
+	display:block;
+}
+
+.hotelimg{
+	box-sizing: border-box;
+	border:1px solid #B4B4B4;
+	width:292px;
+	height:189px;
+	position:relative;
+	overflow:hidden;
+	margin-top:10px;	
+}
+
+.hotelfeatures, .hotelroom{
+	box-sizing: border-box;
+	width:292px;
+	background-color:white;
+	border:1px solid #B4B4B4;
+	padding:5px;
+	height:50px;
+}
+
+.hotelfeatures{
+	height:220px;
+}
+
+.hotelroom{
+	height:190px;
+}
+
+.hotext{
+	font-size:13px;
+	line-height:15px;
+}
+
+.footer{
+	clear:both;
+	justify-content:space-evenly;
+	height:38px;
+	background-color:#1C5545;
+	width:100%;
+	align-items:center;
+	display:flex;
+}
+
+.footerlink, .cright{
+	color:white;
+	font-size:15px;
+}
+
+/*-------------------------media Q-------------------------------*/
+
+@media screen and (max-width:1300px) {
+	
+	.headlink {
+		padding: 25px;
+		font-size:18px;
+	}
+	
+	.restext, .hotext{
+		font-size:12px;
+	}
+	
+	
+	.continue{
+		width: 100px;
+	}
+}
+
+@media screen and (max-width:1100px) {
+	
+	.headlink {
+		padding: 17px;
+		font-size:13px;
+	}
+
+	#checkin, #checkout{
+		width: 95px;
+	}
+	
+	#adult, #child{
+		width: 15px;
+	}
+}
+
+@media screen and (max-width:930px) {
+	.hotelresults{
+		height:1250px;
+	}
+}
+	
+@media screen and (max-width:745px) {
+	
+	.header{
+		height:90px;
+		display:inline-block;
+	}
+	
+	.headlink {
+		padding:10px;
+	}
+	
+	.hoteldetails{
+		width:430px;
+		margin-left:1%;
+		text-align:center;
+		height:550px;
+	}
+	
+	#hotel1, #hotel2, #hotel3{
+		display:inline-block;
+		height:190px;
+		padding-top:10px;
+	}
+	
+	.hoteldata, .hoteldetails, .hotelresults, .restaurantdata, .restaurantdetails, .restaurantresults {
+		display:inline-block;
+	}
+	
+	#destination, #checkin, #checkout{
+		width: 315px;
+	}
+
+	#adult, #child{
+		width: 150px;
+	}
+	
+	.hotelresults{
+		width:430px;
+		height:1880px;
+	}
+	
+	.hotelimg{
+		height:189px;
+		margin-left:48px;
+		margin-top:25px;
+	}
+	
+	#logo{
+		margin-top:10px;
+	}
+	
+	.hotelfeatures, .hotelroom{
+		margin-left:48px;
+		text-align:center;
+	}
+	
+	.footer{
+		display:inline-block;
+		height:45px;
+	}
+	
+	.footerlink, .cright{
+		font-size:13px;
+		margin-left:15px;
+	}
+}

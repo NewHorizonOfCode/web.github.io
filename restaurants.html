@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Nook - Restaurants</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	
+<body>
+	<!-- Top navigation bar-->
+	<nav class="header">
+		<img src="images/logo.png" alt="logo" id="logo">
+        <a href="index.html" class="headlink">Home</a>
+		<a href="flights.html" class="headlink" >Flights</a>
+		<a href="hotels.html" class="headlink">Hotels</a>
+		<a href="carrental.html" class="headlink">Car Rentals</a>
+		<a href="restaurants.html" class="headlink" id="restaurants">Restaurants</a>
+		<a href="offer.html" class="headlink">Offers</a>
+		<a href="attractions.html" class="headlink">Attractions</a>
+		<a href="contact.html" class="headlink">Contact us</a>
+	</nav>
+	<form class="restaurantdata">
+		<div class = "restaurantdetails">
+			<h2>Take a look at our great options</h2>
+			<div class="restfield">
+				<label for="destination" id="destintittle" >Where are you going?</label><br>
+				<input type="text" id="destination" name="destination" placeholder="City, State, Country, etc" required><br>
+			</div>
+			<div class="restfield" id="buttondiv">
+				<button id="button" type="submit">Search</button> 
+			</div>
+			<div class="otheroptions">
+				<div class="restcategories">
+					<h4>Meals</h4>
+					<input type="checkbox" name="Breakfast" value="breakfast" class="restoptions">Breakfast<br>
+					<input type="checkbox" name="Brunch" value="brunch">Brunch<br>
+					<input type="checkbox" name="Lunch" value="lunch">Lunch<br>
+					<input type="checkbox" name="Dinner" value="dinner">Dinner<br>
+				</div>
+				<div class="restcategories">
+					<h4>Cuisine</h4>
+					<input type="checkbox" name="European" value="european" class="restoptions">European<br>
+					<input type="checkbox" name="Asian" value="asian" class="restoptions">Asian<br>
+					<input type="checkbox" name="Brazilian" value="brazilian" class="restoptions">Brazilian<br>
+					<input type="checkbox" name="Irish" value="irish" class="restoptions">Turkey<br>
+				</div>
+				<div class="restcategories">
+					<h4>Dietary</h4>
+					<input type="checkbox" name="Glutenfree" value="glutenfree" class="restoptions">Gluten free<br>
+					<input type="checkbox" name="Halal" value="halal" class="restoptions">Halal<br>
+					<input type="checkbox" name="Vegan" value="vegan" class="restoptions">Lactose free<br>
+					<input type="checkbox" name="Vegetarian" value="vegetarian" class="restoptions">Vegetarian<br>
+				</div>
+				<!--"show more" to toggle between hiding and showing more restaurant categories-->
+				<p id="showhide" onclick="myFunction()">Show more</p>
+				<div id="showhideoptions">
+					<div class="restcategories">
+						<h4>Offers</h4>
+						<input type="checkbox" name="Alloffers" value="alloffers" class="restoptions" >All offers<br>
+						<input type="checkbox" name="Offersnearyou" value="offersnearyou" class="restoptions">Offers near you<br>
+						<input type="checkbox" name="Ordermoresavemore" value="ordermoresavemore" class="restoptions">Order more, save more<br>
+						<input type="checkbox" name="Freeitems" value="freeitems" class="restoptions">Free items<br>
+					</div>
+					<div class="restcategories">			
+						<h4>Sort</h4>
+						<input type="checkbox" name="Distance" value="distance" class="restoptions">Distance<br>
+						<input type="checkbox" name="Quickestdelivery" value="quickestdelivery" class="restoptions">Quickest Delivery<br>
+						<input type="checkbox" name="Top-rated" value="toprated" class="restoptions">Top-rated<br>
+						<input type="checkbox" name="Recommended" value="recommended" class="restoptions">Recommended<br>
+					</div>
+					<div class="restcategories">
+						<h4>Dishes</h4>
+						<input type="checkbox" name="Burger" value="burger" class="restoptions">Burger<br>
+						<input type="checkbox" name="Cakes" value="cakes" class="restoptions">Cakes<br>
+						<input type="checkbox" name="Pasta" value="pasta" class="restoptions">Pasta<br>
+						<input type="checkbox" name="Deef" value="beef" class="restoptions">Beef<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="restaurantresults">
+			<div class="restaurant1">
+				<div class="restimg">
+					<img src="images/restaurant1.1.jpg" alt="restaurant1.1" class="rest-img">
+					<!--Buttons to view other pictures of the hotel -->
+					<span class="btnprev" onclick="prev4()">&lt;</span>
+					<span class="btnnext" onclick="next4()">&gt;</span>
+				</div>
+				<div class="restname">
+					<h4>Bamboo Leaf </h4><br>
+					<img src="images/4stars.jpg" alt="4stars" class="resultimg"><br>
+					<h5 class="cuisine">Cuisines</h5><br>
+						<p class="restext">Japanese, Vietnamese</p><br>
+					<h5>Special diets</h5><br>
+						<p class="restext">Vegetarian friendly, gluten free options</p><br>
+					<h5>Meals</h5><br>
+						<p class="restext">Lunch, dinner, brunch, drinks</p><br>
+				</div>
+				<div class="restcontact">
+					<h4>Location and Contact</h4><br>
+						<p class="restext">Nurnberger Strasse 17 Charlottenburg, 10789 Berlin Germany </p><br>
+						<p class="restext"><a href="https://bambooleaf.de/" target="_blank" class="restwebsite">Website</a></p><br>
+						<p class="restext"><a href="tel:+493021235844" class="restphonenumb"> +493021235844</a></p><br>
+				</div>
+				<div class="restreview">
+					<h4>Reviews</h4><br>
+					<h6>Perfect</h6>
+					<p class="restext">I visited the restaurant with my friends, and the service was absolutely 
+					perfect! The food was amazing, and we had two people in our group with gluten 
+					allergy, and it was definitely not a problem.</p><br>
+					<p class="customer">Washington D.</p><br>
+					
+					<h6>Fantastic place</h6>
+					<p class="restext">Lovely place, second time I have been. The service is good, the food is 
+					excellent. Something different and a great experience to create memories.</p><br>
+					<p class="customer">Jordan P.</p><br>
+					
+					<h6>Extraordinary</h6>
+					<p class="restext">Extraordinary food, definitely worth a visit.</p><br>
+					<p class="customer">Golias S.</p><br>
+				</div>
+			</div>
+			<div class="restaurant2">
+				<div class="restimg">
+					<img src="images/restaurant2.1.jpg" alt="restaurant2.1" class="rest-img2">
+					<span class="btnprev" onclick="prev5()">&lt;</span>
+					<span class="btnnext" onclick="next5()">&gt;</span>
+				</div>
+				<div class="restname">
+					<h4>Pinch </h4><br>
+					<img src="images/5stars.jpg" alt="5stars" class="resultimg"><br>
+					<h5 class="cuisine">Cuisines</h5><br>
+						<p class="restext">Café, European, Healthy</p><br>
+					<h5>Special diets</h5><br>
+						<p class="restext">Vegetarian friendly</p><br>
+					<h5>Meals</h5><br>
+						<p class="restext">Breakfast, lunch</p><br>
+				</div>
+				<div class="restcontact">
+					<h4>Location and Contact</h4><br>
+						<p class="restext">Gabriele-Tergit-Promenade 21 (Eingang über Köthenerstr), 10963 Berlin Germany</p><br>
+						<p class="restext"><a href="https://cafepinch.de/" target="_blank" class="restwebsite">Website</a></p><br>
+						<p class="restext"><a href="tel:+493092032094" class="restphonenumb"> +493092032094</a></p><br>
+				</div>
+				<div class="restreview">
+					<h4>Reviews</h4><br>
+					<h6>WOW !</h6>
+					<p class="restext">This restaurant has excellent food, the sushi in particular was delicious.
+					The drinks were fantastic, I recommend the "home cocktail"</p><br>
+					<p class="customer">Clare T.</p><br>
+					
+					<h6>Nice experience!</h6>
+					<p class="restext">We had lunch with a medium sized group with a set reservation. 
+					After arrival we were seated quickly and we offered different 
+					appetizers and main courses.</p><br>
+					<p class="customer">Joseph W.</p><br>
+					
+					<h6>Quick excellent lunch</h6>
+					<p class="restext">Super Pho Soup, hot, tasty beautiful herbe aromas .. Ingwer tea, fresh and without sugars!</p><br>
+					<p class="customer">Marie Q.</p><br>
+				</div>
+			</div>
+			<div class="restaurant3">
+				<div class="restimg">
+					<img src="images/restaurant3.1.jpg" alt="restaurant3.1" class="rest-img3">
+					<span class="btnprev"  onclick="prev6()">&lt;</span>
+					<span class="btnnext" onclick="next6()">&gt;</span>
+				</div>
+				<div class="restname">
+					<h4>Ristorant A MANO</h4><br>
+					<img src="images/3stars.jpg" alt="3stars" class="resultimg"><br>
+					<h5 class="cuisine">Cuisines</h5><br>
+						<p class="restext">Italian, Seafood, European</p><br>
+					<h5>Special diets</h5><br>
+						<p class="restext">Vegetarian friendly, gluten free options</p><br>
+					<h5>Meals</h5><br>
+						<p class="restext">Lunch, dinner, brunch, late night</p><br>
+				</div>
+				<div class="restcontact">
+					<h4>Location and Contact</h4><br>
+						<p class="restext">Strausberger Platz 2, (Eingang über Köthenerstr) 10243 Berlin Germany</p><br>
+						<p class="restext"><a href="https://www.amano-ristorante.de/" target="_blank" class="restwebsite">Website</a></p><br>
+						<p class="restext"><a href="tel:+493095598243" class="restphonenumb"> +493095598243</a></p><br>
+				</div>
+				<div class="restreview">
+					<h4>Reviews</h4><br>
+					<h6>Great food & great staff</h6>
+					<p class="restext">Great food & friendly staff Restaurant is located in vivid area.</p><br>
+					<p class="customer">Ellen D.</p><br>
+					
+					<h6>Very good</h6>
+					<p class="restext">They received us kindly and found us a place indoors very reliable 
+					and nice location it’s a place where you can eat Italian food really well</p><br>
+					<p class="customer">Kate W.</p><br>
+					
+					<h6>Just amazing</h6>
+					<p class="restext">Amazing and authentic food. And great value for money! 
+					The waiters were so welcoming and funny. Can’t wait to come back</p><br>
+					<p class="customer">Sean P.</p><br>
+				</div>
+			</div>
+		</div>
+	</form>
+	<nav class="footer">
+        <a href="" class="footerlink">About us</a>
+		<a href="" class="footerlink">Privacy Statement</a>
+		<a href="" class="footerlink">Term & Conditions</a>
+		<a href="" class="footerlink">Cookie Policy</a>
+		<a href="" class="footerlink">Career</a>
+		<span class="cright">© 2023, Travel Nook. All rights reserved</span>
+	</nav>
+	<script src="script.js"></script>	
+
+</body>

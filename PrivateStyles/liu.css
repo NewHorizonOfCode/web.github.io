@@ -1,0 +1,347 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial, Verdana, sans-serif;
+}
+body{background-image: url('./images/hotel.jpg');   
+ background-repeat: no-repeat;    
+ background-size: cover;}
+ 
+.header{
+	width:100%;
+	height:80px;
+	background-color:#d6256f ;
+	display:flex;
+	align-items:center;
+	box-sizing: border-box;
+}
+
+.headlink{
+    padding: 35px;
+	font-size:20px;
+	font-family: 'Trebuchet MS, sans-serif';
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+.headlink:link, .footerlink:link, .restwebsite:link, .restphonenumb:link {
+	text-decoration: none;
+}
+.headlink:visited, .footerlink:visited, .restwebsite:visited, .restphonenumb:visited {
+	text-decoration: none;
+}
+.headlink:hover, .footerlink:hover, .restwebsite:hover, .restphonenumb:hover, #showhide:hover {
+	text-decoration: underline;
+}
+.headlink:active, .footerlink:active, .restwebsite:active, .restphonenumb:active {
+	text-decoration: underline;
+}
+
+#logo{
+	margin-left: 1%;
+}
+
+#hotels,#restaurants,#homepage, #flights, #carrentals,#offers, #attractions, #contactus{
+	color:#1ccc3c ;
+}
+
+.hotitle{
+	font-size:20px;
+	text-align:center;
+}
+
+.footer{
+	clear:both;
+	justify-content:space-evenly;
+	height:38px;
+	background-color:#ce1313;
+	width:100%;
+	align-items:center;
+	display:flex;
+}
+
+.footerlink, .cright{
+	color:white;
+	font-size:15px;
+}
+
+/*------------------------------------CSS for Hotel page by Xiangnan Liu-----------------------------------------*/
+
+.hoteldata{
+	display:flex;
+	justify-content:space-evenly;
+	box-sizing: border-box;
+	text-align:center;
+}
+
+.hoteldetails{
+	background-color:#e78ef0;
+	width:380px;
+	margin-top:28px;
+	margin-bottom:25px;
+	padding:20px;
+	border-radius:5px;
+	box-sizing: border-box;
+	height:575px;	
+	opacity: 0.8;
+}
+
+.hotelresults{
+	box-sizing: border-box;
+	margin-top:10px;
+	margin-bottom:12px;
+	width:70%;
+	padding:15px;
+	border-radius:5px;
+	height:612px;
+}
+
+.destfield{
+	margin-top:30px;
+	text-align:left;
+}
+
+#buttondiv{
+	text-align:center;
+}
+
+#destination, #checkin, #checkout{
+	width: 315px;
+	border-radius: 5px;
+	padding:8px;
+	margin-top:5px;
+	border: 1px solid #ce1313;
+}
+
+#adult, #child{
+	width: 150px;
+	border-radius: 5px;
+	padding:8px;
+	margin-top:5px;
+	border: 1px solid #ce1313;
+	text-align:center;
+}
+
+/* Hide arrows from input number in quantity field on Order page */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* minus and plus button style */
+.minus,.plus{
+	cursor:pointer;
+	width:25px;
+	height:20px;
+	background:#f2f2f2;
+	border-radius:4px;
+	padding-bottom:7px;
+	border:1px solid #ddd;
+	justify-content:center;
+	text-align: center;
+	display: inline-block;
+}
+
+#destination:focus, #checkin:focus, #checkout:focus, #adult:focus, #child:focus{
+	box-shadow: 0 0 3px #ce1313;
+	outline:none;	
+}
+
+#button, .continue{
+	width: 167px;
+	border-radius: 5px;
+	padding:6px;
+	background-color: #1fc8ea;
+	font-size: 15px;
+	color:#ce1313;
+	font-weight:bold;
+	border: 1px solid #51c44b;
+}
+
+#button:hover, .continue:hover{
+	background-color:#55b8b5;
+	cursor:pointer;
+	color:white;	
+}
+
+#hotel1, #hotel2, #hotel3{
+	display:flex;
+	margin-top:3px;
+	height:190px;
+	opacity: 0.8;
+}
+
+.hotelimg{
+	border:1px solid #cf3838cf;
+	width:292px;
+	position:relative;
+	overflow:hidden;	
+}
+
+#images, #images2{
+	position:absolute;
+	z-index:1;
+}
+
+/* previous and next button picture style */
+.btnprev, .btnnext{
+	position:absolute;
+	height:30px;
+	width:30px;
+	background:rgba(255,255,255,0.6);
+	cursor:pointer;
+	top:50%;
+	transform:translateY(-50%);
+	padding-top:10px;
+	z-index:2;
+}
+
+.btnprev{
+	left:0;
+}
+
+.btnnext{
+	right:0;
+}
+
+.hotelfeatures{
+	width:440px;
+	border:1px solid #cf3838cf;
+	padding-left:5px;
+	background-color:white;
+	text-align:left;
+}
+
+.hotelroom{
+	width:300px;
+	padding-top:18px;
+	padding-left:5px;
+	border:1px solid #cf3838cf;
+	background-color:white;
+}
+
+.restext, .hotext{
+	font-size:13px;
+	line-height:10px;
+}
+
+@media screen and (max-width:1300px) {
+	
+	.headlink {
+		padding: 25px;
+		font-size:18px;
+	}
+	
+	.hotelresults{
+		width:65%;
+	}
+	
+	.restext, .hotext{
+		font-size:12px;
+	}
+	
+	.hotelroom{
+		width:210px;
+	}
+	
+	.continue{
+		width: 100px;
+	}
+}
+
+@media screen and (max-width:1100px) {
+	
+	.headlink {
+		padding: 17px;
+		font-size:13px;
+	}
+	
+	.hoteldetails{	
+		width:205px;
+	}
+
+	#destination, #checkin, #checkout{
+		width: 145px;
+	}
+	
+	#adult, #child{
+		width: 80px;
+	}
+	
+	.hotelresults{
+		width:75%;
+	}
+}
+
+@media screen and (max-width:828px) {
+	
+	.header{
+		height:90px;
+		display:inline-block;
+	}
+	
+	.headlink {
+		padding:10px;
+	}
+	
+	.hoteldetails{
+		width:430px;
+		margin-left:1%;
+		text-align:center;
+	}
+	
+	#hotel1, #hotel2, #hotel3{
+		display:inline-block;
+		height:190px;
+		padding-top:10px;
+	}
+	
+	.hoteldata, .hoteldetails, .hotelresults, .restaurantdata, .restaurantdetails, .restaurantresults {
+		display:inline-block;
+	}
+	
+	#destination, #checkin, #checkout{
+		width: 315px;
+	}
+
+	#adult, #child{
+		width: 150px;
+	}
+	
+	.hotelresults{
+		width:430px;
+		height:1710px;
+	}
+	
+	.hotelimg{
+		height:189px;
+		margin-left:48px;
+	}
+	
+	#logo{
+		margin-top:10px;
+	}
+	
+	.hotelfeatures, .hotelroom{
+		width:287px;
+		margin-left:48px;
+		text-align:center;
+	}
+	
+	.footer{
+		display:inline-block;
+		height:45px;
+	}
+	
+	.footerlink, .cright{
+		font-size:13px;
+		margin-left:15px;
+	}
+}
