@@ -14,41 +14,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="../script.js"></script>
-<style>
-@media only screen and (max-width: 600px) {
-  /* to change the font size of header, nav elements for smaller screens */
- 
- header, nav, nav form, nav p, nav label, nav input, nav button {
-    font-size: 12px;
-  }
-  
-  .offermenu1 {
-   width: 70%;
-  }
-   
-  article img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  #dropdownOffer {
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .offerdescription1, .offerdescription {
-    font-size: 15px;
-    padding: 6px;
-  }
-  
-  .offerprice, figcaption {
-    font-size: 13px;
-    padding: 5px;
-  }
-}
-</style>	
+	<script src="../script.js"></script>	
 </head>
 <body>
 <!-- Top navigation bar-->
@@ -94,78 +60,80 @@
 				<input type="submit" value="Submit" class="offermenu" id="offersubmit">
 			</form>
 		</div>
-		<!--First offer hotel -->
-		<div class="articleclass">
-			<div class="btn-p-offer">
-				<p class="offerdescription1">All inclusive offer</p>
-				<p class="offerdescription">Golden Port Salou And Spa Hotel</p>
-				<p class="offerdescription">Tarragona, Spain</p>
-			</div>
-			<!--The code to create a gallery of pictures with button navigation-->
-			<div class="div-img">
-				<img id="image4" class="img-offer" src="../images/offerhotel1.jpg" alt="Image">
-			</div>
-			<div class="btn-img-change">
-				<button onclick="changeImage4('../images/offerhotel1.jpg')" class="offermenu">Image 1</button>
-				<button onclick="changeImage4('../images/offerhotel2.jpg')" class="offermenu">Image 2</button>
-				<button onclick="changeImage4('../images/offerhotel3.jpg')" class="offermenu">Image 3</button>
-			</div>
-			<p class="offerprice">4 nights + flight 560 &euro; pp</p>
-			<!--The code to create a picture with clock and offer-->  
-			<div  class="img-clock-p">
-				<img class="clock" src="../images/clock.png" alt="Clock">
-				<p>offer ends in: 3 days</p>
-			</div>
-			<button  type="submit" class="offermenu">Book now</button> 
-		</div>		  
-		 <!--Second offer hotel -->
-		<div class="articleclass">
-			<div class="btn-p-offer">
-				<p class="offerdescription1">Honeymoon bundle</p>
-				<p class="offerdescription">Movenpick Resort & Spa Karon Beach</p>
-				<p class="offerdescription">Phuket, Thailand</p>
-			</div>
-			<!--The code to create a gallery of pictures with button navigation-->
-			<div class="div-img">
-				<img id="image5" class="img-offer" src="../images/offerhotel4.jpg" alt="Image">
-			</div>
-			<div class="btn-img-change">
-				<button onclick="changeImage5('../images/offerhotel4.jpg')" class="offermenu">Image 1</button>
-				<button onclick="changeImage5('../images/offerhotel5.jpg')" class="offermenu">Image 2</button>
-				<button onclick="changeImage5('../images/offerhotel6.jpg')" class="offermenu">Image 3</button>	
-			</div>
-			<p class="offerprice">7 nights + flight 1235 &euro; pp</p>
-			<!--The code to create a picture with clock and offer-->  
-			<div class="img-clock-p">
-				<img class="clock" src="../images/clock.png" alt="Clock">
-				<p>offer ends in: 5 days</p>
+		<div class="offeresults">
+			<!--First offer hotel -->
+			<div class="articleclass">
+				<div class="btn-p-offer">
+					<p class="offerdescription1">All inclusive offer</p>
+					<p class="offerdescription">Golden Port Salou And Spa Hotel</p>
+					<p class="offerdescription">Tarragona, Spain</p>
+				</div>
+				<!--The code to create a gallery of pictures with button navigation-->
+				<div class="div-img">
+					<img id="image4" class="img-offer" src="../images/offerhotel1.jpg" alt="Image">
+				</div>
+				<div class="btn-img-change">
+					<button onclick="changeImage4('../images/offerhotel1.jpg')" class="offermenu">Image 1</button>
+					<button onclick="changeImage4('../images/offerhotel2.jpg')" class="offermenu">Image 2</button>
+					<button onclick="changeImage4('../images/offerhotel3.jpg')" class="offermenu">Image 3</button>
+				</div>
+				<p class="offerprice">4 nights + flight 560 &euro; pp</p>
+				<!--The code to create a picture with clock and offer-->  
+				<div  class="img-clock-p">
+					<img class="clock" src="../images/clock.png" alt="Clock">
+					<p>offer ends in: 3 days</p>
+				</div>
+				<button  type="submit" class="offermenu">Book now</button> 
+			</div>		  
+			 <!--Second offer hotel -->
+			<div class="articleclass">
+				<div class="btn-p-offer">
+					<p class="offerdescription1">Honeymoon bundle</p>
+					<p class="offerdescription">Movenpick Resort & Spa Karon Beach</p>
+					<p class="offerdescription">Phuket, Thailand</p>
+				</div>
+				<!--The code to create a gallery of pictures with button navigation-->
+				<div class="div-img">
+					<img id="image5" class="img-offer" src="../images/offerhotel4.jpg" alt="Image">
+				</div>
+				<div class="btn-img-change">
+					<button onclick="changeImage5('../images/offerhotel4.jpg')" class="offermenu">Image 1</button>
+					<button onclick="changeImage5('../images/offerhotel5.jpg')" class="offermenu">Image 2</button>
+					<button onclick="changeImage5('../images/offerhotel6.jpg')" class="offermenu">Image 3</button>	
+				</div>
+				<p class="offerprice">7 nights + flight 1235 &euro; pp</p>
+				<!--The code to create a picture with clock and offer-->  
+				<div class="img-clock-p">
+					<img class="clock" src="../images/clock.png" alt="Clock">
+					<p>offer ends in: 5 days</p>
+				</div>	
+				<button type="submit" class="offermenu">Book now</button> 		
+			</div>		  
+			<!--Third offer hotel -->
+			<div class="articleclass">
+				<div class="btn-p-offer">
+					<p class="offerdescription1">Family vacation</p>
+					<p class="offerdescription">Rove At The Park</p>
+					<p class="offerdescription">Dubai, UAE</p>
+				</div>
+				<!--The code to create a gallery of pictures with button navigation-->
+				<div class="div-img">
+					<img id="image6" class="img-offer" src="../images/offerhotel7.jpg" alt="Image">
+				</div>
+				<div class="btn-img-change">
+					<button onclick="changeImage6('../images/offerhotel7.jpg')" class="offermenu">Image 1</button>
+					<button onclick="changeImage6('../images/offerhotel8.jpg')" class="offermenu">Image 2</button>
+					<button onclick="changeImage6('../images/offerhotel9.jpg')" class="offermenu">Image 3</button>
+				</div>
+				<p class="offerprice">5 nights + flight 725 &euro; pp</p>
+				<!--The code to create a picture with clock and offer-->  
+				<div class="img-clock-p">
+					<img class="clock" src="../images/clock.png" alt="Clock">
+					<p>offer ends in: 1 day</p>
+				</div>
+				<button type="submit" class="offermenu">Book now</button> 	
 			</div>	
-			<button type="submit" class="offermenu">Book now</button> 		
-		</div>		  
-		<!--Third offer hotel -->
-		<div class="articleclass">
-			<div class="btn-p-offer">
-				<p class="offerdescription1">Family vacation</p>
-				<p class="offerdescription">Rove At The Park</p>
-				<p class="offerdescription">Dubai, UAE</p>
-			</div>
-			<!--The code to create a gallery of pictures with button navigation-->
-			<div class="div-img">
-				<img id="image6" class="img-offer" src="../images/offerhotel7.jpg" alt="Image">
-			</div>
-			<div class="btn-img-change">
-				<button onclick="changeImage6('../images/offerhotel7.jpg')" class="offermenu">Image 1</button>
-				<button onclick="changeImage6('../images/offerhotel8.jpg')" class="offermenu">Image 2</button>
-				<button onclick="changeImage6('../images/offerhotel9.jpg')" class="offermenu">Image 3</button>
-			</div>
-			<p class="offerprice">5 nights + flight 725 &euro; pp</p>
-			<!--The code to create a picture with clock and offer-->  
-			<div class="img-clock-p">
-				<img class="clock" src="../images/clock.png" alt="Clock">
-				<p>offer ends in: 1 day</p>
-			</div>
-			<button type="submit" class="offermenu">Book now</button> 	
-		</div>			
+		</div>
 	</div>
 	<nav class="footer">
         <a href="" class="footerlink">About us</a>
