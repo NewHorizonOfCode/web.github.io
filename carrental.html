@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Nook - Hotels</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+	<link rel="shortcut icon" href="./images/icon.png" type="image/png">
+
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Top navigation bar-->
+    <nav class="header">
+        <img src="images/logo.png" alt="logo" id="logo">
+        <a href="index.html" class="headlink">Home</a>
+        <a href="flights.html" class="headlink">Flights</a>
+        <a href="hotels.html" class="headlink">Hotels</a>
+        <a href="carrental.html" class="headlink" id="carrentals">Car Rentals</a>
+        <a href="restaurants.html" class="headlink">Restaurants</a>
+        <a href="offer.html" class="headlink">Offers</a>
+        <a href="attractions.html" class="headlink">Attractions</a>
+        <a href="contact.html" class="headlink">Contact us</a>
+    </nav>
+
+    <form id="carform">
+        <table class="table-alfred">
+            <tr class="tr-alfred">
+                <th class="th-alfred">Car Type</th>
+                <th class="th-alfred">Description</th>
+                <th class="th-alfred">Price</th>
+            </tr>
+            <tr class="tr-alfred">
+                <td class="td-alfred"><img class="car-image" src="images/car_2.jpg" alt="Car 1"
+                        onclick="openRentModal('2019 Toyota Corolla - 4-door sedan', 50)"></td>
+                <td class="td-alfred">2019 Toyota Corolla - 4-door sedan</td>
+                <td class="td-alfred">$50/day</td>
+            </tr>
+            <tr class="tr-alfred">
+                <td class="td-alfred"><img class="car-image" src="images/car_C25.jpg" alt="Car 2"
+                        onclick="openRentModal('2020 Ford Mustang - sports car', 100)"></td>
+                <td class="td-alfred">2020 Ford Mustang - sports car</td>
+                <td class="td-alfred">$100/day</td>
+            </tr>
+            <tr class="tr-alfred">
+                <td class="td-alfred"><img class="car-image" src="images/car_3.jpg" alt="Car 3"
+                        onclick="openRentModal('2021 Tesla Model 3 - electric car', 150)"></td>
+                <td class="td-alfred">2021 Tesla Model 3 - electric car</td>
+                <td class="td-alfred">$150/day</td>
+            </tr>
+            <tr class="tr-alfred">
+                <td class="td-alfred"><img class="car-image" src="images/car4.jpg" alt="Car 4"
+                        onclick="openRentModal('2022 Mercedes-Benz S-Class - luxury car', 200)"></td>
+                <td class="td-alfred">2022 Mercedes-Benz S-Class - luxury car</td>
+                <td class="td-alfred">$200/day</td>
+            </tr>
+        </table>
+
+    </form>
+
+    <div id="rentModal" class="modal-rent">
+        <div class="modal-content">
+            <span class="close-rent">&times;</span>
+            <h2 class="h2-alfred">Rent a Car</h2>
+            <p id="selectedCar">Selected Car: </p>
+            <form id="rentForm" class="form-alfred">
+                <label class="label-alfred" for="startDate">Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                <label class="label-alfred" for="endDate">End Date:</label>
+                <input type="date" id="endDate" name="endDate" required>
+                <button type="button" onclick="submitRental()">Rent Car</button>
+            </form>
+        </div>
+    </div>
+
+
+    <nav class="footer">
+        <a href="" class="footerlink">About us</a>
+        <a href="" class="footerlink">Privacy Statement</a>
+        <a href="" class="footerlink">Term & Conditions</a>
+        <a href="" class="footerlink">Cookie Policy</a>
+        <a href="" class="footerlink">Career</a>
+        <span class="cright">© 2023, Travel Nook. All rights reserved</span>
+    </nav>
+
+</body>
