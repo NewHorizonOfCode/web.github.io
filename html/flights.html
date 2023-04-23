@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flights</title>
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="shortcut icon" href="../images/icon.png" type="image/png">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../script.js"></script>
-  
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel Nook - Flights</title>
+	<meta name="description" content="Order your ticket">
+	<meta name="keywords" content="Travel, Flight, Ticket">
+	<link rel="stylesheet" href="../styles.css">
+	<link rel="shortcut icon" href="../images/icon.png" type="image/png">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../script.js"></script>
+
 </head>
+
 <body class="flightcontent">
 	<!-- Top navigation bar-->
 	<nav class="header">
 		<img src="../images/logo.png" alt="logo" id="logo">
-        <a href="../index.html" class="headlink">Home</a>
+		<a href="../index.html" class="headlink">Home</a>
 		<a href="" class="headlink" id="flights">Flights</a>
 		<a href="./hotels.html" class="headlink">Hotels</a>
 		<a href="./carrental.html" class="headlink">Car Rentals</a>
@@ -26,23 +30,23 @@
 	<main>
 		<h1 class="flighth1">Flights</h1>
 		<form id="flight-form">
-			  <label for="departure" class="flightlabels">Departure:</label>
-			  <input type="text" id="departure" name="departure" required>
+			<label for="departure" class="flightlabels">Departure:</label>
+			<input type="text" id="departure" name="departure" required>
 
-			  <label for="destination" class="flightlabels">Destination:</label>
-			  <input type="text" id="flightdest" name="destination" required>
+			<label for="destination" class="flightlabels">Destination:</label>
+			<input type="text" id="flightdest" name="destination" required>
 
-			  <label for="departdate" class="flightlabels">Departure Date:</label>
-			  <input type="date" id="departdate" name="departdate" required>
+			<label for="departdate" class="flightlabels">Departure Date:</label>
+			<input type="date" id="departdate" name="departdate" required>
 
-			  <label for="returndate" class="flightlabels">Return Date:</label>
-			  <input type="date" id="returndate" name="returndate" required>
+			<label for="returndate" class="flightlabels">Return Date:</label>
+			<input type="date" id="returndate" name="returndate" required>
 
-			  <input type="submit" id="flightsearchbtn" value="Search" >
+			<input type="submit" id="flightsearchbtn" value="Search">
 		</form>
 	</main>
 	<nav class="footer">
-        <a href="" class="footerlink">About us</a>
+		<a href="" class="footerlink">About us</a>
 		<a href="" class="footerlink">Privacy Statement</a>
 		<a href="" class="footerlink">Term & Conditions</a>
 		<a href="" class="footerlink">Cookie Policy</a>
@@ -50,4 +54,5 @@
 		<span class="cright">© 2023, Travel Nook. All rights reserved</span>
 	</nav>
 </body>
+
 </html>
